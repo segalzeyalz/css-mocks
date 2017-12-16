@@ -1,4 +1,9 @@
+body{
+    font-family: Arimo;
+}
 #nav{
+    margin: auto;
+    width: 70%;
     background: #fff;
     border-radius: 2px;
     display: -ms-flexbox;
@@ -29,7 +34,7 @@
   }
 
   #nav>div{
-    font-weight: 500;
+    font-weight: 600;
     color: #cc0000;
   }
   #logoImg{
@@ -42,3 +47,23 @@
   #logoImg:hover{
     opacity: 1;
   }
+  .subscribers:hover{
+    font-weight: 500 !important;
+  }
+  #subscribersLink:hover, #goActive:hover{
+    font-weight: 900;
+  }
+.colorIconfb{
+    color: blue;
+    opacity: 0.5
+}
+.colorIconfb:hover{
+    opacity: 1;    
+}
+.colorInsta{
+    color: black;
+    opacity: 0.5;
+}
+.colorInsta:hover{
+    opacity: 1;
+}
