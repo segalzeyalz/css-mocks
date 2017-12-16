@@ -1,0 +1,159 @@
+a{
+  text-decoration: none;
+  
+}
+body{
+  background-color: #2794ff;
+  margin: 0;
+  color: white;
+  font-family: "Avenir Next","Helvetica Neue",Helvetica,sans-serif;
+  overflow-x: hidden;
+}
+.wrapper{
+  margin-top: 56px;
+  width: 1120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  .logo{
+    height: 32px;
+    width: 90px;
+    background: url(./ionic/images/ionic-logo.png) 0px -32px;
+    background-repeat: no-repeat;
+    display: block;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    transition: .5s opacity;
+    background-size: 90px;
+  }
+  .logo:hover{
+    cursor: pointer;
+    background: url(./ionic/images/ionic-logo.png) 0 0;
+    background-size: 90px 72px;
+    height: 32px;
+  }
+  nav{
+    display: inline-flex;
+    position: relative;
+  }
+  nav>ul{
+    display: inline-flex;    
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav>ul>li{
+    padding-left: 10px;
+  }
+
+  nav>ul::after{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+
+
+  nav>ul>li>a,  .framework:hover{
+    transition: .3s opacity;    
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+nav>ul>li>a:hover, .framework{
+    color: rgba(255,255,255,.65);
+    transition: .3s opacity;    
+  }
+.title{
+    padding: -10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+.dropdown {
+ position: relative;
+ display: inline-flex;
+}
+
+.devShow{
+  display: none;
+}
+.dropdown:hover .devShow {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+  box-shadow: 0 12px 28px rgba(0,0,0,.25), 0 1px 4px rgba(0,0,0,.1);
+  border-radius: 3px;
+  height: auto;
+  width: 324px;
+  margin: 50px 150px;
+  position: absolute;
+  min-width: 160px;
+  padding: 5px 15px;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  text-align: center;
+}
+
+  .devShow>ul{
+    margin-left:20px;
+    padding: 0;
+    list-style: none;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    
+  }
+  .devShow>ul>li{
+    letter-spacing: .1em;
+    margin-top: 15px;
+    transition: transform .35s cubic-bezier(.17,.67,.52,1),opacity .1s linear,top .35s step-start;
+    display: block;
+  }
+  .devShow>ul>li>a{
+    padding-top: 15px;
+      color: #727c8e;
+      transition: 0.5s color;
+  }
+  .devShow>ul>li>a:hover{
+    color: #4a8bfc;
+  }
+  .devShow::after{
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    border-color: #fff transparent;
+    border-width: 0 13px 11px 13px;
+    top: -10px;
+    left: 45%;
+  }
+  .arrow{
+    display: none;
+    transition: transform .35s cubic-bezier(.17,.67,.52,1),opacity .1s linear,top .35s step-start;
+  }
+  .arrow:hover{
+    display: inline;
+  }
