@@ -1,5 +1,6 @@
 body{
     font-family: Arimo;
+    direction: rtl;
 }
 #nav{
     margin: auto;
@@ -34,7 +35,7 @@ body{
   }
 
   #nav>div{
-    font-weight: 600;
+    font-weight: 500;
     color: #cc0000;
   }
   #logoImg{
